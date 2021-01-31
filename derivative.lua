@@ -1,0 +1,9 @@
+local derivative
+function derivative (f, delta)
+  delta = delta or 1e-4
+  return function (x)
+    return (f(x + delta) - f(x)) / delta
+  end
+end
+
+local c = derivative(math.sin)
