@@ -152,13 +152,15 @@ table.unpack() 将真实的列表转换成一组返回值。unpack 函数的重�
 ## IO
 
 ### 简单 io 模型
+
 io.input()
 io.output()
 io.read()
 io.write()
 io.lines()
 
-### 完整io模型
+### 完整 io 模型
+
 io.open()
 io.tmpfile()
 f:seek(whence, offset)
@@ -166,6 +168,6 @@ os.rename()
 os.remove()
 os.exit()
 os.getenv()
-os.execute() 等价于 c的system
+os.execute() 等价于 c 的 system
 io.popen() 该函数运行一条系统命令，并且可以重定向命令的输入输出
-
+file:seek(whence[,offset]) whence:cur set end
